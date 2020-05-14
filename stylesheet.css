@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+#headdiv {
+  background-image: url('glitter.jpg');
+  font-family: 'Delius Swash Caps';
+  font-size: 40px;
+}
+
+#author {
+  font-family: 'Sanchez', serif;
+  margin-left: -0.6em;
+  text-align: right;
+  font-style: italic;
+}
+
+body {
+  background-color: #f5e8d7;
+}
+h1{
+  font-family: 'Clicker Script';
+}
+h2, h5{
+  font-family: 'Delius Swash Caps';
+}
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+.navbar {
+  background-color: #522626;
+}
+
+.cont {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+blockquote {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-style: italic;
+  /* background: #ddd; */
+}
+
+blockquote:before {
+position: absolute;
+content: open-quote;
+font-size: 4em;
+margin-left: 70px;
+margin-top: -0.4em;
+filter:brightness(250%);
+}
+
+blockquote p {
+display: inline;
+}
+
+#div-conf{
+  display: inline-block;
+  background-color: white;
+  text-align: justify;
+  padding-left: 15px;
+  border-style: ridge;
+  width: 100%
+}
+
+#div-conf p{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+
+#div-conf img {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+	margin-top: 5px;
+	width:150px ;
+	height:150px;
+  float: left;
+}
+
+.footer-social-icons{
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.social-icon {
+    color: pink;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: black;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: black;
+}
+.fa-instagram:hover {
+    background-color: #c21150;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: black;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: black;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+}
