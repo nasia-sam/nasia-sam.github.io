@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nasia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    * {box-sizing:border-box}
+
+    body{
+      text-align: center;
+    }
+  </style>
+  <script>
+  $(function(){
+    $("#headdiv").load("headdiv.html");
+    $("#footer").load("footer.html");
+    $("#navbar").load("navbar.html");
+  });
+  </script>
+
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+  </script>
+</head>
+
+<body onload="plusSlides(0)">
+  <div id="headdiv" class="jumbotron text-center" style="margin-bottom:0"></div>
+  <div id="navbar"></div>
+
+  <div class="slideshow-container">
+    <h2>Meet Spithas!</h2>
+    <h5>He is 8yo and he is the cuttest dog ever</h5>
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/spithoni.jpg" style="width:30%">
+    </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 9</div>
+    <img src="images/spithoni01.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 9</div>
+    <img src="images/spithoni02.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 9</div>
+    <img src="images/spithoni03.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 9</div>
+    <img src="images/spithoni04.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 9</div>
+    <img src="images/spithoni05.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 9</div>
+    <img src="images/spithoni06.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 9</div>
+    <img src="images/spithoni07.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 9</div>
+    <img src="images/spithoni08.jpg" style="width:30%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <br /><br />
+  <p>I know what you're thinking. A whole page for my dog??! Well, truth is that I love my
+  dog and I had to make one more html page and I hadn't used any js so I though it is a safe
+   choise to dedicate a page to Spithas. Also, look how cute he is! I send pictures of him to my
+    friends whenever they got their blues. Spithas is so cute that it makes everyone feel instantly
+  better when they see him! So, you're welcome. </p>
+</div>
+<br>
+
+  <div id="footer" class="footer-social-icons"></div>
+</body>
